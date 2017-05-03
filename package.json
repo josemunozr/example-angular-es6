@@ -1,0 +1,35 @@
+{
+  "name": "example-workshop-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-animate": "^1.6.4",
+    "angular-ui-router": "^1.0.0-alpha.5",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-runtime": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "nodemon": "^1.11.0",
+    "parallelshell": "^2.0.0",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "create": "touch ./server/public/app.js",
+    "build": "browserify -t babelify ./app/app.js -o ./server/public/app.js",
+    "watch": "watchify -t babelify ./app/app.js -o ./server/public/app.js",
+    "postinstall": "npm run create && npm run build",
+    "dev": "nodemon ./server/index.js",
+    "server": "parallelshell 'npm run dev' 'npm run watch'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

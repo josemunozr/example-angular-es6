@@ -1,0 +1,42 @@
+$primary-color-red: #DB3A34;
+$primary-color-light: #177E89;
+$primary-color-dark: #084C61;
+$primary-color-yellow: #FFC857;
+$primary-color-grey: #CCCCCC;
+$primary-color-white: #ffffff;
+
+body, html {
+  font-size: 16px;
+}
+
+
+.header {
+
+  display: flex;
+  justify-content: center;
+  .title{
+    font-size: 1.5em;
+    background: $primary-color-red;
+    color: $primary-color-white;
+    padding: 10px 29vw;
+  }
+}
+
+.listItem {
+  list-style: none;
+  padding: 0 1em;
+
+  .speaker {
+    border-top: 1px solid $primary-color-grey;
+  }
+}
+
+.footer {
+  background: $primary-color-dark;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 15px solid $primary-color-light;
+  color: $primary-color-white;
+}

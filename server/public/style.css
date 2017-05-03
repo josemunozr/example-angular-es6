@@ -1,0 +1,26 @@
+body, html {
+  font-size: 16px; }
+
+.header {
+  display: flex;
+  justify-content: center; }
+  .header .title {
+    font-size: 1.5em;
+    background: #DB3A34;
+    color: #ffffff;
+    padding: 10px 29vw; }
+
+.listItem {
+  list-style: none;
+  padding: 0 1em; }
+  .listItem .speaker {
+    border-top: 1px solid #CCCCCC; }
+
+.footer {
+  background: #084C61;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 15px solid #177E89;
+  color: #ffffff; }
